@@ -6,49 +6,49 @@ const QUESTIONS = [
     // --- 語彙 (1-50) ---
     {
         id: 1, section: "vocabulary",
-        question: "この<ruby>道<rt>みち</rt></ruby>は<strong><ruby>車<rt>くるま</rt></ruby></strong>が多いです。",
+        question: "この<ruby>道<rt>みち</rt></ruby>は<strong>車</strong>が多いです。",
         options: ["じどうしゃ", "くるま", "ちゃ", "しゃ"], correct: 1, correctText: "くるま",
-        explanation: "「車」的訓讀為「くるま」（Kuruma）。「じどうしゃ」是「自動車」的發音。"
+        explanation: "「車」的訓讀為「くるま」（Kuruma）。「じどうしゃ」是「自動車」的發音。考點漢字未標音以供測驗。"
     },
     {
         id: 2, section: "vocabulary",
-        question: "昨日、<strong><ruby>図書館<rt>としょかん</rt></ruby></strong>へ行きました。",
+        question: "昨日、<strong>図書館</strong>へ行きました。",
         options: ["としょかん", "ずしょかん", "ちずかん", "としょけん"], correct: 0, correctText: "としょかん",
         explanation: "「図書館」讀作「としょかん」（Toshokan）。"
     },
     {
         id: 3, section: "vocabulary",
-        question: "私の部屋は<strong><ruby>暗い<rt>くらい</rt></ruby></strong>です。",
+        question: "私の部屋は<strong>暗い</strong>です。",
         options: ["おもい", "くらい", "かるい", "ひろい"], correct: 1, correctText: "くらい",
         explanation: "「暗い」讀作「くらい」，指昏暗。其餘：おもい（重）、かるい（輕）、ひろい（寬）。"
     },
     {
         id: 4, section: "vocabulary",
-        question: "ここで<strong><ruby>待って<rt>まって</rt></ruby></strong>ください。",
+        question: "ここで<strong>待って</strong>ください。",
         options: ["もって", "まって", "とまって", "はしって"], correct: 1, correctText: "まって",
         explanation: "動詞「待つ」的て形為促音便「待って」（Matte）。其餘：もって（持）、とまって（止/泊）、はしって（走）。"
     },
     {
         id: 5, section: "vocabulary",
-        question: "日本の<strong><ruby>秋<rt>あき</rt></ruby></strong>はきれいです。",
+        question: "日本の<strong>秋</strong>はきれいです。",
         options: ["はる", "なつ", "あき", "ふゆ"], correct: 2, correctText: "あき",
         explanation: "「秋」讀作「あき」（Aki）。其餘為：春（はる）、夏（なつ）、冬（ふゆ）。"
     },
     {
         id: 6, section: "vocabulary",
-        question: "彼は<strong><ruby>病気<rt>びょうき</rt></ruby></strong>で休みました。",
+        question: "彼は<strong>病気</strong>で休みました。",
         options: ["びょうき", "へいき", "よわき", "げんき"], correct: 0, correctText: "びょうき",
         explanation: "「病気」讀作「びょうき」，代表生病。其餘：へいき（平氣）、げんき（元氣）。"
     },
     {
         id: 7, section: "vocabulary",
-        question: "妹は<strong><ruby>洋服<rt>ようふく</rt></ruby></strong>が欲しいと言っています。",
+        question: "妹は<strong>洋服</strong>が欲しいと言っています。",
         options: ["ようふく", "わふく", "きもの", "せいふく"], correct: 0, correctText: "ようふく",
         explanation: "「洋服」讀作「ようふく」，指西式服裝。其餘：わふく（和服）、せいふく（制服）。"
     },
     {
         id: 8, section: "vocabulary",
-        question: "もっと<strong><ruby>近く<rt>ちかく</rt></ruby></strong>へ来てください。",
+        question: "もっと<strong>近く</strong>へ来てください。",
         options: ["とおく", "ちかく", "おそく", "はやく"], correct: 1, correctText: "ちかく",
         explanation: "「近く」讀作「ちかく」，指附近、近處。其餘：とおく（遠く）、おそく（遅く）、はやく（早く）。"
     },
@@ -121,7 +121,7 @@ const QUESTIONS = [
         id: 19, section: "vocabulary",
         question: "<strong>うつす</strong>的正確用法是？",
         options: [
-            "カメラで綺麗に景色をうつしました。",
+            "カメラで景色をうつしました。",
             "明日までにこのレポートをうつさなければなりません。",
             "部屋の机を窓の近くにうつしました。",
             "友達に本をうつしました。"
@@ -141,61 +141,61 @@ const QUESTIONS = [
     },
     {
         id: 21, section: "vocabulary",
-        question: "ここは<strong><ruby>安全<rt>あんぜん</rt></ruby></strong>な場所です。",
+        question: "ここは<strong>安全</strong>な場所です。",
         options: ["かんぜん", "あんぜん", "しんぜん", "あんしん"], correct: 1, correctText: "あんぜん",
         explanation: "「安全」的讀音是「あんぜん」（Anzen）。其餘：かんぜん（完全）、あんしん（安心）。"
     },
     {
         id: 22, section: "vocabulary",
-        question: "今日、新しい<strong><ruby>技術<rt>ぎじゅつ</rt></ruby></strong>を学びました。",
+        question: "今日、新しい<strong>技術</strong>を学びました。",
         options: ["ぎじゅつ", "ぎじゅち", "きじゅつ", "しじゅつ"], correct: 0, correctText: "ぎじゅつ",
         explanation: "「技術」讀作「ぎじゅつ」（Gijutsu）。"
     },
     {
         id: 23, section: "vocabulary",
-        question: "友達を私の家に<strong><ruby>招待<rt>しょうたい</rt></ruby></strong>しました。",
+        question: "友達を私の家に<strong>招待</strong>しました。",
         options: ["しょうたい", "しょうだい", "せいたい", "じょうたい"], correct: 0, correctText: "しょうたい",
         explanation: "「招待」讀作「しょうたい」，代表招待、邀請。注意「状態」讀作「じょうたい」。"
     },
     {
         id: 24, section: "vocabulary",
-        question: "彼は<strong><ruby>特別<rt>とくべつ</rt></ruby></strong>な人です。",
+        question: "彼は<strong>特別</strong>な人です。",
         options: ["とくべつ", "とくへつ", "とくべち", "どくべつ"], correct: 0, correctText: "とくべつ",
         explanation: "「特別」讀作「とくべつ」（Tokubetsu）。"
     },
     {
         id: 25, section: "vocabulary",
-        question: "その映画はとても<strong><ruby>有名<rt>ゆうめい</rt></ruby></strong>です。",
+        question: "その映画はとても<strong>有名</strong>です。",
         options: ["ゆうめい", "ゆめい", "ゆうめ", "ゆめ"], correct: 0, correctText: "ゆうめい",
         explanation: "「有名」讀作有長音的「ゆうめい」（Yuumei）。「夢」讀作「ゆめ」。"
     },
     {
         id: 26, section: "vocabulary",
-        question: "<strong><ruby>火事<rt>かじ</rt></ruby></strong>に気をつけてください。",
+        question: "<strong>火事</strong>に気をつけてください。",
         options: ["かじ", "かち", "かし", "がじ"], correct: 0, correctText: "かじ",
         explanation: "「火事」讀作「かじ」（Kaji），指火災。「家事」亦讀作「かじ」。"
     },
     {
         id: 27, section: "vocabulary",
-        question: "<strong><ruby>英語<rt>えいご</rt></ruby></strong>の授業は面白いです。",
+        question: "<strong>英語</strong>の授業は面白いです。",
         options: ["えご", "えいこ", "えいご", "えんご"], correct: 2, correctText: "えいご",
         explanation: "「英語」讀作「えいご」（Eigo）。"
     },
     {
         id: 28, section: "vocabulary",
-        question: "来週、<strong><ruby>試験<rt>しけん</rt></ruby></strong>があります。",
+        question: "来週、<strong>試験</strong>があります。",
         options: ["しけん", "じけん", "しけんけん", "せいけん"], correct: 0, correctText: "しけん",
         explanation: "「試験」讀作「しけん」（Shiken），指考試。而「事件」讀作「じけん」。"
     },
     {
         id: 29, section: "vocabulary",
-        question: "今度の旅行の<strong><ruby>準備<rt>じゅんび</rt></ruby></strong>をします。",
+        question: "今度の旅行の<strong>準備</strong>をします。",
         options: ["じゅんび", "じゅんぴ", "しゅんび", "しゅんぴ"], correct: 0, correctText: "じゅんび",
         explanation: "「準備」讀作「じゅんび」（Junbi）。"
     },
     {
         id: 30, section: "vocabulary",
-        question: "<strong><ruby>住所<rt>じゅうしょ</rt></ruby></strong>を書いてください。",
+        question: "<strong>住所</strong>を書いてください。",
         options: ["じゅうしょ", "じゅしょ", "しゅうしょ", "じゅうじょ"], correct: 0, correctText: "じゅうしょ",
         explanation: "「住所」讀作「じゅうしょ」（Juusho），指住址。"
     },
@@ -214,7 +214,7 @@ const QUESTIONS = [
     {
         id: 33, section: "vocabulary",
         question: "デパートへ<strong>かいもの</strong>に行きます。",
-        options: ["買物", "買物", "買い物", "買物"], // 在實際應用中只寫一個正確的
+        options: ["買物", "買物", "買い物", "買物"],
         options: ["買物", "買持", "買い物", "交い物"], correct: 2, correctText: "買い物",
         explanation: "「かいもの」的漢字寫法為「買い物」（買東西）。"
     },
@@ -281,7 +281,6 @@ const QUESTIONS = [
     {
         id: 44, section: "vocabulary",
         question: "昨日買った服は（　）大きかったです。",
-        options: ["少し", "たぶん", "とても", "ずいぶん"], // 用於微調的詞
         options: ["少し", "全然", "ちっとも", "決して"], correct: 0, correctText: "少し",
         explanation: "「少し（稍微）」可用於肯定句修飾形容詞。其餘三個選項「全然、ちっとも、決して」一般與否定句搭配使用。"
     },
@@ -307,7 +306,7 @@ const QUESTIONS = [
         question: "<strong>ひろう</strong>的正確用法是？",
         options: [
             "道で綺麗な石を拾いました。",
-            "タクシーを拾って学校へ行きました。",
+            "タクシーを拾って school へ行きました。",
             "先生の言葉を拾いました。",
             "本棚から本を拾いました。"
         ], correct: 0, correctText: "道で綺麗な石を拾いました。",
@@ -357,8 +356,8 @@ const QUESTIONS = [
     {
         id: 52, section: "grammar",
         question: "お茶（　）飲みませんか。",
-        options: ["でも", "しか", "までに", "ながら"], correct: 0, correctText: "でも",
-        explanation: "「でも」在此處表示提議或婉轉的舉例，代表「喝杯茶之類的吧」。其餘選項：「しか...ない」代表僅僅、「ながら」一邊...一邊。"
+        options: ["でも", "しか", "までに", "ながら"], correct: 0, correctText: "進でも",
+        explanation: "「進でも」在此處表示提議或婉轉的舉例，代表「喝杯茶之類的吧」。其餘選項：「しか...ない」代表僅僅、「ながら」一邊...一邊。"
     },
     {
         id: 53, section: "grammar",
@@ -398,7 +397,7 @@ const QUESTIONS = [
     },
     {
         id: 59, section: "grammar",
-        question: "先生は学生に本を（　）ました。",
+        question: "先生は學生に本を（　）ました。",
         options: ["読まれ", "読ませ", "読ませられ", "読ん"], correct: 1, correctText: "読ませ",
         explanation: "「使役形」。句意：「老師讓學生讀書。」表示上級讓下級做某事，用使役形。第一類動詞「読む」的使役形為「読ませる」，過去式為「読ませました」。"
     },
@@ -434,7 +433,7 @@ const QUESTIONS = [
     },
     {
         id: 65, section: "grammar",
-        question: "請將以下句子重組，並選出置於 <span class='star-mark'>★</span> 的選項：<br>これは ＿＿ ＿＿ ＿<span class='star-mark'>★</span>＿ ＿＿ カメラです。<br>選項：① 日本で &nbsp; ② 買った &nbsp; ③ 父が &nbsp; ④ 私に",
+        question: "請將以下句子重組，並選出置於 <span class='star-mark'>★</span> 的選項：<br>這是 [父が] [私に] [★ 日本で] [買った] 照相機。<br>選項：① 日本で &nbsp; ② 買った &nbsp; ③ 父が &nbsp; ④ 私に",
         options: ["日本で (①)", "買った (②)", "父が (③)", "私に (④)"], correct: 0, correctText: "日本で (①)",
         explanation: "重組順序為：「これは [父が (③)] [私に (④)] [★ 日本で (①)] [買った (②)] カメラです。」（這是爸爸在日本買給我的相機。）星號在第三格，所以答案是 ① 日本で。"
     },
@@ -506,9 +505,15 @@ const QUESTIONS = [
     },
     {
         id: 77, section: "grammar",
-        question: "あの人はもう帰った（　）がありません。",
-        options: ["はず", "わけ", "こと", "つもり"], correct: 2, correctText: "こと",
-        explanation: "「動詞た形 + ことがあります」表示「曾經有過某種經驗」；其否定為「〜たことがありません」（從未有過某經驗）。"
+        question: "私は歌舞伎を（　）ことがあります。",
+        options: ["見る", "見て", "見た", "見ない"], correct: 2, correctText: "見た",
+        explanation: "「動詞た形 + ことがあります」表示「曾經有過某種經驗」。「歌舞伎（かぶき）」為日本傳統戲劇。句意為「我曾看過歌舞伎」。"
+    },
+    {
+        id: 80, section: "grammar",
+        question: "この料理は砂糖を入れすぎて、（　）すぎます。",
+        options: ["甘", "甘い", "甘く", "甘くて"], correct: 0, correctText: "甘",
+        explanation: "「形容詞去詞尾（い/な）+ じる」表示「程度過度」。い形容詞「甘い」去い變「甘」+「すぎます」（太甜了）。"
     },
     {
         id: 78, section: "grammar",
@@ -518,19 +523,13 @@ const QUESTIONS = [
     },
     {
         id: 79, section: "grammar",
-        question: "この部屋は少し（　）にくいですね。",
-        options: ["話し", "話す", "話して", "話さ"], correct: 0, correctText: "話し",
-        explanation: "「動詞ます形去ます + にくい」表示「難以進行某動作」。動詞「話す」的ます形為「話します」，去ます為「話し」+「にくい」。"
-    },
-    {
-        id: 80, section: "grammar",
-        question: "この料理は砂糖を入れすぎて、（　）すぎます。",
-        options: ["甘", "甘い", "甘く", "甘くて"], correct: 0, correctText: "甘",
-        explanation: "「形容詞去詞尾（い/な）+ すぎる」表示「程度過度」。い形容詞「甘い」去い變「甘」+「すぎます」（太甜了）。"
+        question: "このペンは少し（　）にくいですね。",
+        options: ["書き", "書く", "書いて", "書か"], correct: 0, correctText: "書き",
+        explanation: "「動詞ます形去ます + にくい」表示「難以進行某動作」。動詞「書く」的ます形為「書きます」，去ます為「書き」+「にくい」（難寫）。"
     },
     {
         id: 81, section: "grammar",
-        question: "天気予報によると、明日は雨が（　）そうです。",
+        question: "天氣予報によると、明日は雨が（　）そうです。",
         options: ["降る", "降り", "降って", "降るの"], correct: 0, correctText: "降る",
         explanation: "表示「傳聞（據說）」，句型為「動詞普通形 + そうです」。因此使用普通形「降る」。"
     },
@@ -538,7 +537,7 @@ const QUESTIONS = [
         id: 82, section: "grammar",
         question: "どうぞお茶を（　）ください。",
         options: ["お飲み", "お飲みになり", "お飲みして", "召し上がって"], correct: 3, correctText: "召し上がって",
-        explanation: "勸客人吃或喝東西的敬語表達，最常用「召し上がってください」（請享用/請喝）。「お飲みください」亦可，但選項 1 是「お飲み」不是「お飲みください」。"
+        explanation: "勸客人吃或喝東西的敬語表達，最常用「召し上がってください」（請享用/請喝）。"
     },
     {
         id: 83, section: "grammar",
@@ -562,7 +561,7 @@ const QUESTIONS = [
         id: 86, section: "grammar",
         question: "請將以下句子重組，並選出置於 <span class='star-mark'>★</span> 的選項：<br>昨日 ＿＿ ＿＿ ＿<span class='star-mark'>★</span>＿ ＿＿ 行きませんでした。<br>選項：① 降った &nbsp; ② ので &nbsp; ③ 雨が &nbsp; ④ どこへも",
         options: ["降った (①)", "ので (②)", "雨が (③)", "どこへも (④)"], correct: 1, correctText: "ので (②)",
-        explanation: "重組順序為：「昨日 [雨が (③)] [降った (①)] [★ ので (②)] [遠くへ/どこへも (④)] 行きませんでした。」（昨天因為下雨，哪裡也沒去。）星號在第三格，答案是 ② ので。"
+        explanation: "重組順序為：「昨日 [雨が (③)] [降った (①)] [★ ので (②)] [どこへも (④)] 行きませんでした。」（昨天因為下雨，哪裡也沒去。）星號在第三格，答案是 ② ので。"
     },
     {
         id: 87, section: "grammar",
@@ -584,7 +583,7 @@ const QUESTIONS = [
     },
     {
         id: 90, section: "grammar",
-        question: "（文章填空）日本へ（　）前に、たくさん日本語を勉強しました。",
+        question: "日本へ（　）前に、たくさん日本語を勉強しました。",
         options: ["行く", "行った", "行って", "行こう"], correct: 0, correctText: "行く",
         explanation: "「在做某動作之前」，句型為「動詞基本形 + 前に」。因此使用動詞基本形「行く」。"
     },
@@ -605,7 +604,7 @@ const QUESTIONS = [
             "旅行はありません。",
             "旅行はあります。",
             "台風になります。",
-            "前日の夜8時にメールで連絡します。"
+            "前日の夜8시에メールで連絡します。"
         ], correct: 1, correctText: "旅行はあります。",
         explanation: "文章明確寫道：「もし雨が降っても旅行はあります（下雨的話旅行仍然舉行）」。只有遇到颱風才會取消（台風の場合は休みになります）。"
     },
@@ -693,7 +692,7 @@ const QUESTIONS = [
         passage: "ペットショップからのお願い：\n店内の犬や猫の写真を撮ってもいいですが、フラッシュ（光るもの）は使わないでください。動物たちが驚いてしまいます。また、ケージ（箱）の中に手や指を入れないでください。動物に触りたいときは、店員に声をかけてください。",
         question: "<strong>問題：店内で犬や猫と触れ合いたいとき、どうしなければなりませんか。</strong>",
         options: [
-            "自由にケージの中に手を入れて触ります。",
+            "自由にケージの中に手を入れて觸ります。",
             "店員に声をかけます。",
             "フラッシュを使って写真を撮ります。",
             "何もせずに見てるだけです。"
@@ -837,7 +836,7 @@ const sakuraEffect = {
             speedX: Math.random() * 1.5 - 0.5 + 0.5,
             speedY: Math.random() * 1.2 + 0.8,
             rotation: Math.random() * 360,
-            rotationSpeed: Math.random() * 2 - 1,
+            rotation(rotationSpeed) { return Math.random() * 2 - 1; },
             opacity: Math.random() * 0.4 + 0.4
         };
     },
@@ -846,7 +845,8 @@ const sakuraEffect = {
         this.particles.forEach((p, idx) => {
             p.y += p.speedY;
             p.x += p.speedX;
-            p.rotation += p.rotationSpeed;
+            if (p.rotationSpeed) p.rotation += p.rotationSpeed;
+            else p.rotation += 1;
 
             if (p.y > this.canvas.height + 20 || p.x > this.canvas.width + 20) {
                 this.particles[idx] = this.createParticle(false);
@@ -907,7 +907,6 @@ const gameState = {
         document.getElementById('btn-generate-cert').addEventListener('click', () => this.generateCertificate());
         document.getElementById('btn-download-cert').addEventListener('click', () => this.downloadCertificate());
 
-        // 題庫篩選按鈕事件
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -916,7 +915,6 @@ const gameState = {
             });
         });
 
-        // 展開收合所有答案
         let allExpanded = false;
         document.getElementById('btn-toggle-all-answers').addEventListener('click', (e) => {
             allExpanded = !allExpanded;
@@ -956,7 +954,6 @@ const gameState = {
             this.currentLevel = 1;
             this.score = 0;
             this.hearts = 3;
-            // 語彙關卡為前 50 題
             this.levelQuestions = QUESTIONS.filter(q => q.section === "vocabulary");
             
             document.getElementById('hearts').classList.remove('hide');
@@ -1011,7 +1008,6 @@ const gameState = {
         const progressPercent = (this.currentIndex / maxCount) * 100;
         document.getElementById('progress-bar').style.width = `${progressPercent}%`;
 
-        // 讀解段落
         const readingContainer = document.getElementById('reading-passage-container');
         if (q.section === "reading" && q.passage) {
             readingContainer.classList.remove('hide');
@@ -1023,7 +1019,6 @@ const gameState = {
         document.getElementById('question-type-badge').textContent = `問題 ${this.currentIndex + 1}`;
         document.getElementById('question-text').innerHTML = q.question;
 
-        // 選項
         const optionsContainer = document.getElementById('options-container');
         optionsContainer.innerHTML = '';
         q.options.forEach((opt, idx) => {
@@ -1256,7 +1251,6 @@ const gameState = {
                 </div>
             `;
             
-            // 綁定單個題目的展開/摺疊事件
             const toggleBtn = item.querySelector('.bank-toggle-btn');
             const panel = item.querySelector('.bank-answer-panel');
             toggleBtn.addEventListener('click', () => {
