@@ -310,6 +310,15 @@ h1 {
     letter-spacing: 0.5px;
 }
 
+.question-text strong, .bank-question strong {
+    color: var(--primary-sakura-dark);
+    text-shadow: 0 0 10px rgba(255, 133, 161, 0.5);
+    font-weight: 700;
+    border-bottom: 2px solid var(--primary-sakura-dark);
+    padding-bottom: 2px;
+    display: inline-block;
+}
+
 /* N4 漢字標音 Ruby 功能 */
 ruby {
     ruby-position: over;
@@ -954,6 +963,159 @@ rt {
 .bank-explanation {
     color: var(--text-muted);
     line-height: 1.5;
+}
+
+.menu-card.warning:hover {
+    border-color: rgba(243, 156, 18, 0.4);
+    box-shadow: 0 12px 30px rgba(243, 156, 18, 0.18);
+}
+
+/* ==========================================================================
+   1.6 N4 保命作弊條樣式 (Cheat Sheet)
+   ========================================================================= */
+.cheat-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 20px;
+}
+
+.cheat-header h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f39c12;
+}
+
+.cheat-scroll-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+/* 自訂作弊條捲軸 */
+.cheat-scroll-container::-webkit-scrollbar {
+    width: 6px;
+}
+.cheat-scroll-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.cheat-scroll-container::-webkit-scrollbar-thumb {
+    background: rgba(243, 156, 18, 0.2);
+    border-radius: 10px;
+}
+.cheat-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #e67e22;
+}
+
+.cheat-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.cheat-card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-sakura);
+    margin-bottom: 16px;
+    border-left: 4px solid #f39c12;
+    padding-left: 12px;
+}
+
+.cheat-card-body {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.cheat-card-body p {
+    margin-bottom: 12px;
+}
+
+.cheat-card-body ul, .cheat-card-body ol {
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+
+.cheat-card-body li {
+    margin-bottom: 10px;
+}
+
+.cheat-card-body strong {
+    color: #f39c12;
+}
+
+.cheat-card-body small {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+/* 表格樣式 */
+.cheat-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cheat-table th, .cheat-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.cheat-table th {
+    background: rgba(243, 156, 18, 0.12);
+    color: #f39c12;
+    font-weight: 700;
+}
+
+.cheat-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* 公式盒 */
+.formula-box {
+    background: rgba(255, 183, 197, 0.05);
+    border: 1px dashed rgba(255, 183, 197, 0.3);
+    border-radius: 12px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.formula-box p {
+    margin-bottom: 8px;
+    font-family: var(--font-jp);
+}
+
+.formula-box p:last-child {
+    margin-bottom: 0;
+}
+
+.formula-box u {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #ff85a1;
+    font-weight: bold;
+}
+
+.highlight-text {
+    background: rgba(243, 156, 18, 0.15);
+    color: #f1c40f;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 /* 隱藏元素工具 */

@@ -895,8 +895,10 @@ const gameState = {
         document.getElementById('btn-challenge').addEventListener('click', () => this.startMode('challenge'));
         document.getElementById('btn-endless').addEventListener('click', () => this.startMode('endless'));
         document.getElementById('btn-view-bank').addEventListener('click', () => this.showBankScreen());
+        document.getElementById('btn-view-cheat').addEventListener('click', () => this.showCheatScreen());
         document.getElementById('btn-back-home').addEventListener('click', () => this.showHomeScreen());
         document.getElementById('btn-bank-back').addEventListener('click', () => this.showHomeScreen());
+        document.getElementById('btn-cheat-back').addEventListener('click', () => this.showHomeScreen());
         document.getElementById('btn-next').addEventListener('click', () => this.handleNextQuestion());
         
         document.getElementById('btn-retry').addEventListener('click', () => this.restartCurrentChallenge());
@@ -941,6 +943,10 @@ const gameState = {
     showBankScreen() {
         this.switchScreen('bank-screen');
         this.renderBankList('all');
+    },
+
+    showCheatScreen() {
+        this.switchScreen('cheat-screen');
     },
 
     startMode(mode) {
